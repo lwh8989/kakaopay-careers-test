@@ -1,0 +1,59 @@
+{% extends "layouts/base.njk" %}
+
+{% import "partials/topbar.njk" as topBar %}
+{% import "partials/promotion.njk" as promotion %}
+
+{% block cssStyles %}
+<link rel="stylesheet" href="{{ staticUrl }}/static/css/partials/topbar.css">
+<link rel="stylesheet" href="{{ staticUrl }}/static/css/partials/promotion.css">
+{% endblock %}
+
+<!-- Top Bar -->
+{% block sectionTopBar %}
+{{ topBar.topbar(posTop=true) }}
+{% endblock %}
+
+<!-- title Drop THE MONEY  -->
+{% block sectionTitle %}
+{{ promotion.dropTheMoney() }}
+{% endblock %}
+
+<!-- G MONEY  -->
+{% block sectionGMoney %}
+{{ promotion.sectionGMoney() }}
+{% endblock %}
+
+<!-- Desc -->
+{% block sectionDesc %}
+{{ promotion.sectionDesc() }}
+{% endblock %}
+
+<!-- SNS -->
+{% block sectionSns %}
+{{ promotion.sectionSns() }}
+{% endblock %}
+
+<!-- Coin Bottom -->
+{% block sectionCoinBottom %}
+{{ promotion.sectionCoinBottom() }}
+{% endblock %}
+
+<!-- Banner -->
+{% block sectionBanner %}
+{{ promotion.sectionBanner() }}
+{% endblock %}
+
+<!-- Note Info -->
+{% block sectionNoteInfo %}
+{{ promotion.sectionNoteInfo() }}
+{% endblock %}
+
+<!-- Join Btn  -->
+{% block joinBtn %}
+{{ promotion.joinBtn(posBtn=true) }}
+{% endblock %}
+
+<!-- Coin Drop -->
+{% block sectionCoinDrop %}
+{{ promotion.sectionCoinDrop() }}
+{% endblock %}

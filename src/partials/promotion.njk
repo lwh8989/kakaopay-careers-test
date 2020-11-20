@@ -1,0 +1,159 @@
+<!-- dropTheMoney -->
+{% macro dropTheMoney() %}
+<div class="section title">
+    <img src="{{ staticUrl }}/static/images/promotion/title-neon.png" alt="Drop The Money" />
+    <div class="title-image">        
+        <img class="green-layer1" src="{{ staticUrl }}/static/images/promotion/title-neon-green-01.png" alt="Drop The Money neon green" />
+        <img class="green-layer2" src="{{ staticUrl }}/static/images/promotion/title-neon-green-02.png" alt="Drop The Money neon green" />
+        <img class="yellow-layer1" src="{{ staticUrl }}/static/images/promotion/title-neon-yellow-01.png" alt="Drop The Money neon yellow" />
+        <img class="yellow-layer2" src="{{ staticUrl }}/static/images/promotion/title-neon-yellow-02.png" alt="Drop The Money neon yellow" />
+    </div>
+    <div class="title-spark">
+        <img class="spark-layer1" src="{{ staticUrl }}/static/images/promotion/title-neon-spark-01.png" alt="Drop The Money spark" />
+        <img class="spark-layer2" src="{{ staticUrl }}/static/images/promotion/title-neon-spark-02.png" alt="Drop The Money spark" />
+        <img class="spark-layer3" src="{{ staticUrl }}/static/images/promotion/title-neon-spark-03.png" alt="Drop The Money spark" />
+        <img class="spark-layer4" src="{{ staticUrl }}/static/images/promotion/title-neon-spark-04.png" alt="Drop The Money spark" />
+    </div>
+    <dl class="hidden">
+        <dt>DROP THE MONEY</dt>
+        <dd>송금만해도 현금이 쏟아진다!</dd>
+    </dl>
+</div>
+{% endmacro %}
+
+<!-- gMoney -->
+{% macro sectionGMoney() %}
+<div class="section gmoney">
+    <div class="gmoney-image">
+        <img class="gmoney-layer" src="{{ staticUrl }}/static/images/promotion/gmoney-bg.png" alt="G Money image" />
+    </div>    
+    <div class="gmoney-title">
+        <img class="gmoney-text-layer" src="{{ staticUrl }}/static/images/promotion/gmoney-text.png" alt="G Money text" />
+        <span class="title-hand left">
+            <img src="{{ staticUrl }}/static/images/promotion/gmoney-hand-left.png" alt="G Money hand left" />
+        </span> 
+        <span class="title-hand right">
+            <img src="{{ staticUrl }}/static/images/promotion/gmoney-hand-right.png" alt="G Money hand right" />
+        </span>
+    </div>
+    <dl class="hidden">
+        <dt>총 1억원</dt>
+        <dd>총 1억원</dd>
+    </dl>
+</div>
+{% endmacro %}
+
+<!-- desc -->
+{% macro sectionDesc() %}
+<div class="section desc">
+    <img src="{{ staticUrl }}/static/images/promotion/reward-info.png" alt="desc" />
+    <dl class="hidden">
+        <dt>추첨을 통해 카카오머니를 드립니다.</dt>
+        <dd>백만원 1명</dd>
+        <dd>1만원 100명</dd>
+        <dd>1천원 1천명</dd>
+        <dd>붸액원 15만명</dd>
+    </dl>
+</div>
+{% endmacro %}
+
+<!-- sns -->
+{% macro sectionSns() %}
+<div class="section sns">
+    <img class="sns-layer1" src="{{ staticUrl }}/static/images/promotion/sns-neon.png" alt="sns" />
+    <img class="sns-layer2" src="{{ staticUrl }}/static/images/promotion/sns-neon-yellow.png" alt="sns" />
+    <ul class="sns-link">
+        <li><a href="#" alt="Kakao Talk">Kakao Talk</a></li>
+        <li><a href="#" alt="">""</a></li>
+        <li><a href="#" alt="Fackbook">Fackbook</a></li>
+        <li><a href="#" alt="Twitter">Twitter</a></li>
+    </ul>
+</div>
+{% endmacro %}
+
+<!-- coin bottom -->
+{% macro sectionCoinBottom() %}
+<div class="section coin-bottom">
+    <img src="{{ staticUrl }}/static/images/promotion/coin-bottom.png" alt="Coin" />
+</div>
+{% endmacro %}
+
+<!-- banner -->
+{% macro sectionBanner() %}
+<!-- 해당영역은 사전과제 PSD에서 레이어가 없는 상태로 공유되었습니다. 임의로 PX값을 확인해서 추가해봤습니다. -->
+<div class="section banner">
+    <img class="spark-layer1" src="{{ staticUrl }}/static/images/promotion/banner-02.png" alt="banner 01" />
+</div>
+{% endmacro %}
+
+<!-- Note Info -->
+{% macro sectionNoteInfo() %}
+<!-- 해당영역은 사전과제 PSD에서 레이어가 없는 상태로 공유되었습니다. 임의로 PX값을 확인해서 추가해봤습니다. -->
+<div class="section note-info">
+    <div class="note-info-wrapper">
+        <p>유의사항</p>
+        <ul>
+            <li>&#183; 참여방법 : 이벤트 계좌로 1원 송금(1일 10회 참여가능 / 송금 후 즉시 환불)</li>
+            <li>&#183; 당첨확인 : 송금 후 카카오페이 플러스친구 메시지로 실시간알림</li>     
+            <li>&#183; 이번주 경품 : 카카오머니 100원~100만원 랜점 증정 (총 155,101명 추첨)</li>
+            <li class="indent">- 매주 금요일 경품이 변경되며, 총 10주간 진행 (6/30 ~ 9/7)</li>     
+            <li class="indent">- 경품금액 5만원 초과시 발생되는 제세공과금은 카카오페이가 부담</li>  
+            <li class="indent top">* 카톡 및 카카오페이 탈퇴/삭제시 당첨이 취소 될 수 있습니다.</li>     
+            <li class="indent">* 당사 사정에 의하여 고지 없이 변경 및 종료 될 수 있습니다.</li>     
+        </ul>
+    </div>
+</div>
+{% endmacro %}
+
+<!-- Door top -->
+{% macro sectionDoorTop() %}
+<div class="section door-top">
+    <div class="close-btn">
+        <a href="#">cloase btn</a>
+    </div>
+    <img class="door-top-layer" src="/static/images/promotion/door-top.png" alt="door top">
+</div>
+{% endmacro %}
+
+<!-- Door bottom -->
+{% macro sectionDoorBottom() %}
+<div class="section door-bottom">
+    <img class="door-bottom-layer" src="/static/images/promotion/door-bottom.png" alt="door bottom">
+</div>
+{% endmacro %}
+
+<!-- join btn -->
+{% macro joinBtn(posBtn=ture) %}
+<div class="section btn btn-join {% if posBtn %}pos-btn{% endif %}">
+    <a href="/promotion/index-event.html" alt="btn join">
+        <img src="{{ staticUrl }}/static/images/promotion/join-btn.png" alt="join btn" />
+    </a>
+</div>
+{% endmacro %}
+
+<!-- forward btn -->
+{% macro forwardBtn(posBtn=ture) %}
+<div class="section btn btn-forward {% if posBtn %}pos-btn{% endif %}">
+    <a href="/promotion/index.html" alt="btn forward">
+        <img src="{{ staticUrl }}/static/images/promotion/forward-btn.png" alt="forward btn" />
+    </a>
+</div>
+{% endmacro %}
+
+<!-- forward btn -->
+{% macro forwardBtn(posBtn=ture) %}
+<div class="section btn btn-forward {% if posBtn %}pos-btn{% endif %}">
+    <a href="/promotion/index.html" alt="btn forward">
+        <img src="{{ staticUrl }}/static/images/promotion/forward-btn.png" alt="forward btn" />
+    </a>
+</div>
+{% endmacro %}
+
+<!-- Coin Drop -->
+{% macro sectionCoinDrop() %}
+<div class="section coin-drop">
+    <div class="coin-01"><img src="{{ staticUrl }}/static/images/promotion/coin-01.png" alt="Coin Drop 01"></div>
+    <div class="coin-02"><img src="{{ staticUrl }}/static/images/promotion/coin-02.png" alt="Coin Drop 02"></div>
+    <div class="coin-03"><img src="{{ staticUrl }}/static/images/promotion/coin-03.png" alt="Coin Drop 03"></div>
+</div>
+{% endmacro %}

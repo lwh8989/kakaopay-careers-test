@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kakaopay Careers Test</title>
-    <!-- semantic-ui -->
-    <link rel="stylesheet" type="text/css" href="{{ staticUrl }}/static/semantic/semantic.min.css">    
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="{{ staticUrl }}/static/semantic/semantic.min.js"></script>
     <!-- base css -->
     <link rel="stylesheet" href="{{ staticUrl }}/static/css/layouts/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -21,8 +17,26 @@
 
 <!-- [D] body -->
 <body>
-    <div class="app wrapper" style="background-image: url({{ staticUrl }}/static/images/homework_1/bg.png);">
+    <div class="app wrapper" style="background-image: url({{ staticUrl }}/static/images/promotion/bg.png);">
         <div class="container">
+            {% block sectionTopBar %}{% endblock %}
+            {% block sectionTitle %}{% endblock %}
+            {% block sectionGMoney %}{% endblock %}
+            {% block sectionDesc %}{% endblock %}
+            {% block sectionSns %}{% endblock %}
+
+            {% block sectionCoinBottom %}{% endblock %}
+            {% block sectionBanner %}{% endblock %}
+            {% block sectionNoteInfo %}{% endblock %}
+
+            {% block sectionCoinAnimation %}{% endblock %}
+            {% block joinBtn %}{% endblock %}
+
+            {% block sectionDoorTop %}{% endblock %}
+            {% block sectionDoorBottom %}{% endblock %}
+            {% block forwardBtn %}{% endblock %}
+
+            {% block sectionCoinDrop %}{% endblock %}
         </div>
     </div>
 </body>

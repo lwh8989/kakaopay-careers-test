@@ -1,0 +1,13 @@
+{% macro topbar(posTop=true) %}
+<div class="topbar {% if posTop %}pos-top{% endif %}">
+    <a href="#" class="topbar-logo" title="Kakaopay Logo">
+        <img src="{{ staticUrl }}/static/images/promotion/top-kakaopay-logo.png" alt="logo pay 송금">
+    </a>
+    <span class="topbar-title">
+        <img src="{{ staticUrl }}/static/images/promotion/top-title.png" alt="title text image">
+    </span>
+    <a href="#" class="topbar-smtm" title="SMTM Logo">
+        <img src="{{ staticUrl }}/static/images/promotion/top-smtm-logo.png" alt="logo SMTM">
+    </a>
+</div>
+{% endmacro %}

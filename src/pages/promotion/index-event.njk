@@ -1,0 +1,24 @@
+{% extends "layouts/base.njk" %}
+
+{% import "partials/topbar.njk" as topBar %}
+{% import "partials/promotion.njk" as promotion %}
+
+{% block cssStyles %}
+<link rel="stylesheet" href="{{ staticUrl }}/static/css/partials/topbar.css">
+<link rel="stylesheet" href="{{ staticUrl }}/static/css/partials/promotion.css">
+{% endblock %}
+
+<!-- Door top -->
+{% block sectionDoorTop %}
+{{ promotion.sectionDoorTop() }}
+{% endblock %}
+
+<!-- Door bottom -->
+{% block sectionDoorBottom %}
+{{ promotion.sectionDoorBottom() }}
+{% endblock %}
+
+<!-- Btn Fowerding -->
+{% block forwardBtn %}
+{{ promotion.forwardBtn(posBtn=true) }}
+{% endblock %}
