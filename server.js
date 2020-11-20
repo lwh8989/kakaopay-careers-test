@@ -19,5 +19,5 @@ app.get('/*.html$/', function(req, res) {
   res.render(`pages/${req.params[0]}.njk`)
 })
 
-var listener = app.listen(8000)
+var listener = app.listen(9000)
 console.log(`listening on port ${listener.address().port}`)
