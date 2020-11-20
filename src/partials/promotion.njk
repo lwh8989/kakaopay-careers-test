@@ -79,10 +79,14 @@
 {% endmacro %}
 
 <!-- banner -->
-{% macro sectionBanner() %}
+{% macro sectionBanner(banner=true) %}
 <!-- 해당영역은 사전과제 PSD에서 레이어가 없는 상태로 공유되었습니다. 임의로 PX값을 확인해서 추가해봤습니다. -->
 <div class="section banner">
-    <img class="spark-layer1" src="{{ staticUrl }}/static/images/promotion/banner-02.png" alt="banner 01" />
+    {% if banner %}
+        <img class="spark-layer1" src="{{ staticUrl }}/static/images/promotion/banner-01.png" alt="banner 01" />
+    {% else %}
+        <img class="spark-layer2" src="{{ staticUrl }}/static/images/promotion/banner-02.png" alt="banner 02" />
+    {% endif %}
 </div>
 {% endmacro %}
 

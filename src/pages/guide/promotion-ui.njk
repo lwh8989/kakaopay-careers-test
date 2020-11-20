@@ -1,0 +1,108 @@
+{% extends "layouts/guide.njk" %}
+
+{% import "partials/topbar.njk" as topBar %}
+{% import "partials/promotion.njk" as promotion %}
+
+{% block cssStyles %}
+<link rel="stylesheet" href="{{ staticUrl }}/static/css/partials/topbar.css">
+<link rel="stylesheet" href="{{ staticUrl }}/static/css/partials/promotion.css">
+{% endblock %}
+
+{% block contents %}
+<!-- Top Bar -->
+<div class="guide-inner">
+    <h1 class="guide-title">Top Bar</h1>
+    <p class="guide-desc">posTop=true 일때 pos-top class가 추가됩니다.<br />해당 클래스는 상단 레이어에 사용되는 클래스 입니다.</p>
+    {{ topBar.topbar(posTop=false) }}
+</div>
+
+<!-- title Drop THE MONEY  -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">DROP THE MONEY</h1>
+    <p class="guide-desc">DROP THE MONEY animation적용했습니다.</p>
+    {{ promotion.dropTheMoney() }}
+</div>
+
+<!-- G MONEY  -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">G MONEY</h1>
+    <p class="guide-desc">G MONEY animation적용했습니다.</p>
+    {{ promotion.sectionGMoney() }}
+</div>
+
+<!-- Desc -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">Desc</h1>
+    <p class="guide-desc">Desc 이미지 영역입니다.</p>
+    {{ promotion.sectionDesc() }}
+</div>
+
+<!-- SNS -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">SNS</h1>
+    <p class="guide-desc">영역속에 link 영역을 추가 했습니다.</p>
+    {{ promotion.sectionSns() }}
+</div>
+
+<!-- Coin Bottom -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">Coin Bottom</h1>
+    <p class="guide-desc">Coin Bottom 이미지 영역입니다.</p>
+    {{ promotion.sectionCoinBottom() }}
+</div>
+
+<!-- Banner -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">Banner</h1>
+    <p class="guide-desc">Banner 임의로 더미 이미지를 만들었습니다.</p>
+    <p class="guide-desc">해당영역은 사전과제 PSD에서 레이어가 없는 상태로 공유되었습니다. 임의로 PX값을 확인해서 추가해봤습니다.</p>
+    {{ promotion.sectionBanner() }}
+    {{ promotion.sectionBanner(banner=false) }}
+</div>
+
+<!-- Note Info -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">Note Info</h1>
+    <p class="guide-desc">해당영역은 사전과제 PSD에서 레이어가 없는 상태로 공유되었습니다. 임의로 PX값을 확인해서 추가해봤습니다. 반응형에 따른 font-size를 추가했습니다.</p>
+    {{ promotion.sectionNoteInfo() }}
+</div>
+
+<!-- Door top -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">Door top</h1>
+    <p class="guide-desc">Door bottom 이미지 영역으로 영역 내에 a Tag 영역을 추가했습니다.</p>
+    {{ promotion.sectionDoorTop() }}
+</div>
+
+<!-- Door bottom -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">Door bottom</h1>
+    <p class="guide-desc">Door bottom 이미지 영역입니다.</p>
+    {{ promotion.sectionDoorBottom() }}
+</div>
+
+<!-- Join Btn  -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">Join Btn</h1>
+    <p class="guide-desc">posBtn=true 일때 pos-btn class가 추가됩니다.<br />해당 클래스는 하단 고정에 사용되는 클래스 입니다.</p>
+    {{ promotion.joinBtn(posBtn=ture) }}
+</div>
+
+<!-- Forward Btn  -->
+<div class="guide-inner">
+    <hr />
+    <h1 class="guide-title">Forward Btn</h1>
+    <p class="guide-desc">posBtn=true 일때 pos-btn class가 추가됩니다.<br />해당 클래스는 하단 고정에 사용되는 클래스 입니다.</p>
+    {{ promotion.forwardBtn(posBtn=ture) }}
+</div>
+{% endblock %}
