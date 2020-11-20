@@ -1,0 +1,34 @@
+{
+  "name": "kakaopay-careers-test",
+  "version": "1.0.0",
+  "description": "Hellow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwh8989/kakaopay-careers-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwh8989/kakaopay-careers-test/issues"
+  },
+  "homepage": "https://github.com/lwh8989/kakaopay-careers-test#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-prettier": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.0",
+    "pretty-quick": "^3.1.0",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {}
+}
