@@ -1,1 +1,26 @@
-Hellow
+{% extends "layouts/default.njk" %}
+
+
+{% block contentsHeader %}
+<h1 class="index-title">Kakao<strong>Pay</strong> Homework</h1>
+{% endblock %}
+
+
+{% block contentsBody %}
+<div class="index-contents">
+    <div class="contents-item">
+        <div class="item-head">
+            <a href="#">Promotion</a>
+            <a href="#">UI Component</a>
+        </div>
+        <div class="item-body">
+            <p>Guide Page</p>
+            <ul>
+                <li>
+                    <a href="guide/homework_1.html">Homework_1 UI Component</a>
+                </li>
+            </ul>
+        </div>
+    </div>    
+</div>
+{% endblock %}
