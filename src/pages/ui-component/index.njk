@@ -1,0 +1,18 @@
+{% extends "layouts/ui-component.njk" %}
+
+{% import "partials/membership.njk" as membership %}
+{# 
+{% import "partials/promotion.njk" as promotion %} #}
+
+{% block cssStyles %}
+{# <link rel="stylesheet" href="{{ staticUrl }}/static/css/partials/topbar.css">
+<link rel="stylesheet" href="{{ staticUrl }}/static/css/partials/promotion.css"> #}
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
+
+<!-- Top Bar -->
+{% block membershipHeader %}
+{{ membership.membershipHeader() }}
+{% endblock %}

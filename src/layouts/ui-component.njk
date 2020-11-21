@@ -12,10 +12,13 @@
     <!-- layout css -->
     <link rel="stylesheet" href="{{ staticUrl }}/static/css/layouts/signup.css">
     {% block cssStyles %}{% endblock %}
+    {% block javascript %}{% endblock %}
 </head>
 
 <!-- [D] body -->
 <body> 
 </body>
-
+    {% block membershipHeader %}{% endblock %}
+    {% block membershipBody %}{% endblock %}
+    {% block membershipFooter %}{% endblock %}
 </html>

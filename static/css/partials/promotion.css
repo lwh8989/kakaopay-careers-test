@@ -473,7 +473,7 @@
 .coin-drop {}
 .coin-drop .coin-01 {
     position: fixed;
-    top: 26%;
+    top: 20%;
     z-index: 3;
 }
 .coin-drop .coin-01 {
@@ -494,7 +494,7 @@
 }
 .coin-drop .coin-02 {
     position: fixed;
-    top: 44%;
+    top: 32%;
     z-index: 2;
 }
 .coin-drop .coin-02 {
@@ -514,7 +514,7 @@
 }
 .coin-drop .coin-03 {
     position: fixed;
-    top: 60%;
+    top: 38%;
     z-index: 1;
 }
 .coin-drop .coin-03 {

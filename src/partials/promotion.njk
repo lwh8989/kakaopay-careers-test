@@ -113,7 +113,7 @@
 {% macro sectionDoorTop() %}
 <div class="section door-top">
     <div class="close-btn">
-        <a href="#">cloase btn</a>
+        <a href="/promotion/promotion01.html">cloase btn</a>
     </div>
     <img class="door-top-layer" src="/static/images/promotion/door-top.png" alt="door top">
 </div>
@@ -147,8 +147,14 @@
 <!-- Coin Drop -->
 {% macro sectionCoinDrop() %}
 <div class="section coin-drop">
-    <div class="coin-01"><img src="{{ staticUrl }}/static/images/promotion/coin-01.png" alt="Coin Drop 01"></div>
-    <div class="coin-02"><img src="{{ staticUrl }}/static/images/promotion/coin-02.png" alt="Coin Drop 02"></div>
-    <div class="coin-03"><img src="{{ staticUrl }}/static/images/promotion/coin-03.png" alt="Coin Drop 03"></div>
+    <div class="coin-01" data-parallax='{"y":-800, "from-scroll": 0, "destance":250, "smoothness":0}'>
+        <img src="{{ staticUrl }}/static/images/promotion/coin-01.png" alt="Coin Drop 01">
+    </div>
+    <div class="coin-02" data-parallax='{"y":-900, "from-scroll": 0, "destance":250, "smoothness":0}'>
+        <img src="{{ staticUrl }}/static/images/promotion/coin-02.png" alt="Coin Drop 02">
+    </div>
+    <div class="coin-03" data-parallax='{"y":-1100, "from-scroll": 0, "destance":250, "smoothness":0}'>
+        <img src="{{ staticUrl }}/static/images/promotion/coin-03.png" alt="Coin Drop 03">
+    </div>
 </div>
 {% endmacro %}
