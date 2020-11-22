@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+}
+body {
+    position: relative;
+    background: #333;
+}
+
+.app {}
+.wrapper {
+    width: 100%;
+    max-width: 750px;
+    background: url(../../images/bg.png) 50% 0 repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.wrapper .container {
+    position: relative;
+}

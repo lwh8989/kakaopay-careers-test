@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+}
+body {
+    position: relative;
+    background: #fdd303;
+}
+
+/* media all */
+@media all and (min-width: 560px) and (max-width: 750px) {
+    .wrapper.signup .title {
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .wrapper.signup .form-row.form-3 .ui.form {
+        width: 29.7%;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 559px) {
+    .wrapper.signup .form-row.form-3 .ui.form {
+        width: 26%;
+    }
+    .wrapper.signup .form-row.form-3 .ui.button {
+        width: 26%;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:479px) {
+}

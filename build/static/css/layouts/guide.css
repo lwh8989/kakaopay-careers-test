@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+}
+body {
+    position: relative;
+    background: #333;
+}
+
+.guide {
+    position: relative;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 750px;
+    background-color: #ccc;
+    background-size: cover;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.guide.wrapper hr {
+    margin: 16px 0 32px;
+}
+
+.guide-title {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 20px 8px;
+}
+.guide-desc {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 20px 16px;
+}
+.guide-inner {
+    padding: 20px 0;
+}
+.guide-inner.indent {
+    padding: 20px 20px;
+}
+.guide-inner.indent .guide-title {
+    padding: 0 0 8px;
+}
+.guide-inner.indent .guide-desc {
+    padding: 16px 0 8px;
+}
+
+.guide-inner.indent .ui.input {
+    margin-bottom: 0.6em;
+}

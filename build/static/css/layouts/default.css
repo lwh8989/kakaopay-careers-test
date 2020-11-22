@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+}
+body {
+    position: relative;
+    background: #333;
+}
+
+.wrapper {
+    width: 100%;    
+    min-height: 100%;
+    max-width: 750px;
+    background-color: #fff;
+    background-size: cover;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.index-title {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #3f2224;
+    background-color: #fee705;
+    padding: 20px;
+}
+.index-title strong {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+.index-contents {
+    padding: 32px;
+}
+.index-contents .contents-item {
+    margin-top: 16px;
+}
+.index-contents .contents-item:first-of-type {
+    margin-top: 0;
+}
+
+.contents-item .item-head {
+    font-size: 24px;
+    padding: 0 0 16px;
+}
+.contents-item .item-head a {
+    display: block;
+}
+
+.contents-item .item-body {}
+.contents-item .item-body p {
+    padding: 8px 0;
+}
+.contents-item .item-body ul {
+    text-indent: 16px;
+    margin-bottom: 16px;
+}
+.contents-item .item-body ul li a {
+    display: block;
+    margin-bottom: 8px;
+}
