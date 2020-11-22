@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/lwh8989/kakaopay-careers-test#readme",
   "devDependencies": {
+    "@babel/preset-flow": "^7.12.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",

@@ -1,0 +1,336 @@
+#root {
+    position: relative;
+    height: 100%;
+}
+.container {
+    position: relative;
+    height: 100%;
+}
+
+/* header */
+.header {
+    padding: 15px 16px;
+    margin-bottom: 16px;
+    background: #443132;
+}
+.header h1 {
+    font-size: 15px;
+    text-align: center;
+    color : #fdd303;
+}
+
+/* body */
+.body {
+    padding: 0 16px;
+}
+.body section {
+    margin-top: 32px;
+}
+.body section h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.body section:first-of-type {
+    margin-top: 0;
+}
+.btn {
+    width: 100%;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+}
+.btn-confirm {    
+    border: 1px solid #443132;    
+    vertical-align: top;
+    text-indent: 6px;
+    background: #443132;
+    color : #fdd303;
+}
+.btn-join {
+    border: 1px solid #443132;
+    vertical-align: top;
+    text-indent: 6px;
+    background: #443132;
+    color : #fdd303;
+}
+
+/* footer */
+.footer {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+}
+
+/* ssection */
+.section-toggle {
+    display: flex;
+    position: relative;
+}
+.section-toggle button {
+    flex: auto;
+    height: 48px;
+    border-radius: 0;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.section-agree {
+    display: flex;
+    position: relative;
+}
+.section-agree p {
+    flex: auto;
+    line-height: 32px;
+}
+.section-agree div {
+    flex: auto;
+}
+.section-agree .switch + .switch-btn {
+    float: right;
+}
+
+/* form */
+.form {
+    display: flex;
+    margin-top: 8px;
+}
+.form:first-of-type {
+    margin-top: 0;
+}
+.form.form-id input {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    padding: 0 8px;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+.form.form-password input {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    padding: 0 8px;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+.form.form-date {
+}
+.form.form-date .wrapper {
+    display: table;
+    width: 100%;
+    overflow: hidden;
+}
+.form.form-date .wrapper .form-layout {
+    display: table-cell;
+    table-layout: fixed;
+    width: 1%;
+}
+.form.form-date .wrapper .form-layout .form-box {
+    display: block;
+    position: relative;
+    width: 100%; 
+}
+.form.form-date .form-year {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    text-indent: 6px;
+}
+.form.form-date .form-month {
+    width: 100%;;
+    height: 44px;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    text-indent: 6px;
+}
+.form.form-date .form-day {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    text-indent: 6px;
+}
+.form.form-phone .wrapper {
+    display: table;
+    width: 100%;
+    overflow: hidden;
+}
+.form.form-phone .wrapper .form-layout {
+    display: table-cell;
+    table-layout: fixed;
+    width: 1%;
+}
+.form.form-phone .wrapper .form-layout .form-box {
+    display: block;
+    position: relative;
+    width: 100%; 
+}
+.form.form-phone .form-local-number {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    text-indent: 6px;
+}
+.form.form-phone .form-phone-number {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    text-indent: 6px;
+}
+
+/* toggle */
+.section-toggle input {
+    color: #443132;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50px;
+}
+.section-toggle input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+}
+.section-toggle label {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    padding: 16px 0;
+    margin: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    flex: auto;
+    text-align: center;
+    background: #eee;
+}
+.section-toggle .check{
+    display: block;
+    position: absolute;
+    border: 5px solid #443132;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    top: 30px;
+    left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+.section-toggle:hover .check {
+    border: 5px solid #FFFFFF;
+}
+.section-toggle .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+    left: 5px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+.section-toggle input[type=radio]:checked ~ label{
+    color: #fdd303;
+    background: #443132;
+}
+.section-toggle input[type=radio]:not(:checked) ~ label{
+    color: #443132;
+    background: #fff;
+}
+
+/* switch */
+.switch {
+    display: none;
+}
+.switch, 
+.switch:after, 
+.switch:before, 
+.switch *, 
+.switch *:after, 
+.switch *:before, 
+.switch + .switch-btn {
+    box-sizing: border-box;
+}
+.switch::-moz-selection, 
+.switch:after::-moz-selection, 
+.switch:before::-moz-selection, 
+.switch *::-moz-selection, 
+.switch *:after::-moz-selection, 
+.switch *:before::-moz-selection, 
+.switch + .switch-btn::-moz-selection {
+    background: none;
+}
+.switch::selection, 
+.switch:after::selection, 
+.switch:before::selection, 
+.switch *::selection, 
+.switch *:after::selection, 
+.switch *:before::selection, 
+.switch + .switch-btn::selection {
+    background: none;
+}
+.switch + .switch-btn {
+    outline: 0;
+    display: block;
+    width: 64px;
+    height: 32px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.switch + .switch-btn:after, .switch + .switch-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+.switch + .switch-btn:after {
+    left: 0;
+}
+.switch + .switch-btn:before {
+    display: none;
+}
+.switch:checked + .switch-btn:after {
+    left: 50%;
+}
+.switch-light + .switch-btn {
+    background: #f0f0f0;
+    border-radius: 16px;
+    padding: 2px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.switch-light + .switch-btn:after {
+    border-radius: 50%;
+    background: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.switch-light:checked + .switch-btn {
+    background: #443132;
+}

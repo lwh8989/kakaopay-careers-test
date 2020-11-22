@@ -1,11 +1,125 @@
-<!-- membership Header -->
-{% macro membershipHeader() %}
+<!-- membership  -->
+{% macro membership() %}
 <div id="root"></div>
-<scritp>
-    const e = React.createElememt;
 
-    class MambershipHeader extend React.Component {
-        
+<script type="text/babel">
+    const e = React.createElement;
+
+    class MemberShip extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                title: '회원가입',
+                id: '아이디 입력',
+                password: '비밀번호 입력',
+            };
+        }
+ 
+        render () {
+            return (
+                <div class="container">
+                    <div class="header">
+                        <h1>{this.state.title}</h1>                        
+                    </div>
+                    <div class="body">
+                        <section class="section-form">
+                            <form class="form form-id">
+                                <input type="text" placeholder={this.state.id} />
+                            </form>
+                            <form class="form form-password">
+                                <input type="password" placeholder={this.state.password} />
+                            </form>
+                        </section>
+                        <section class="section-toggle">
+                            <input type="radio" id="info" name="radio" checked/>
+                            <label for="infoman">남자</label>
+                            <input type="radio" id="info" name="radio" />
+                            <label for="infowoman">여자</label>
+                        </section>
+                        <section class="section-form">
+                            <h2>생일</h2>
+                            <form class="form form-date">
+                                <div class="wrapper">
+                                    <div class="form-layout">
+                                        <div class="form-box">
+                                            <input class="form-year" type="text" placeholder="년" aria-label="년" maxlength="4" />
+                                        </div>
+                                    </div>
+                                    <div class="form-layout">
+                                        <div class="form-box">
+                                            <select class="form-month" aria-label="월">
+                                                <option value="">월</option>
+                                                <option value="01">1</option>
+                                                <option value="02">2</option>
+                                                <option value="03">3</option>
+                                                <option value="04">4</option>
+                                                <option value="05">5</option>
+                                                <option value="06">6</option>
+                                                <option value="07">7</option>
+                                                <option value="08">8</option>
+                                                <option value="09">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout">
+                                        <div class="form-box">
+                                            <input class="form-day" type="text" placeholder="일" aria-label="일" maxlength="2" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                        <section class="section-form">
+                            <h2>전화번호</h2>
+                            <form class="form form-phone">
+                                <div class="wrapper">
+                                    <div class="form-layout">
+                                        <div class="form-box">
+                                            <select class="form-local-number" aria-label="010">
+                                                <option value="">010</option>
+                                                <option value="01">010</option>
+                                                <option value="02">010</option>
+                                                <option value="03">010</option>
+                                                <option value="04">010</option>
+                                                <option value="05">010</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout">
+                                        <div class="form-box">
+                                            <input class="form-phone-number" type="text" placeholder="전화번호" aria-label="전화번호" maxlength="8" />
+                                        </div>
+                                    </div>
+                                    <div class="form-layout">
+                                        <div class="form-box">
+                                            <button class="btn btn-confirm" type="button">인증</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                        <section class="section-agree">
+                            <p>모튼 약관 내용에 동의 합니다.</p>
+                            <div>
+                                <input class="switch switch-light" id="cb1" type="checkbox" />
+                                <label class="switch-btn" for="cb1"></label>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="footer">
+                        <button class="btn btn-join" type="submit">가입하기</button>
+                    </div>
+                </div>
+            );
+        }
     }
-</scritp>
+</script>
+
+<script type="text/babel">
+    ReactDOM.render(<MemberShip />, document.querySelector('#root'));
+</script>
+
 {% endmacro %}

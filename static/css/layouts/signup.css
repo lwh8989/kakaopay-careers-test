@@ -3,51 +3,8 @@ html, body {
 }
 body {
     position: relative;
-    background: #333;
+    background: #fdd303;
 }
-
-.guide {
-    position: relative;
-}
-.wrapper {
-    width: 100%;    
-    min-height: 100%;
-    max-width: 750px;
-    background-color: #ccc;
-    background-size: cover;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 40px;
-}
-
-.wrapper.signup {
-    background: #f8f8f8;
-}
-.wrapper.signup .title {
-    font-size: 2.5rem;
-    padding-bottom: 6rem;
-}
-.wrapper.signup .form-row {
-    margin-bottom: 1.5rem;
-}
-.wrapper.signup .form-row.form-3 .ui.form {
-    width: 30.9%;
-    display: inline-block;
-    vertical-align: top;
-}
-.wrapper.signup .form-row.form-3 .ui.button {
-    width: 30.9%;
-    margin-bottom: 0.6em;
-    vertical-align: top;
-}
-.wrapper.signup .form-row .form-label {
-    padding: 12px 0 11px;
-    display: inline-block;
-}
-.wrapper.signup .form-row.form-btn {
-    margin-top: 6rem;
-}
-
 
 /* media all */
 @media all and (min-width: 560px) and (max-width: 750px) {
